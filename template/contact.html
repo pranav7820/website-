@@ -1,0 +1,22 @@
+{% extends 'base.html'%}}
+
+{% block title %}contact
+  {% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+   <img src="https://source.unsplash.com/collection/190727/1600x400" class="d-block w=100 mx-0" alt="...">
+</div>
+<div class="container-fluid mb-3 py-0 ">
+   <h1 class="text-center">Contact-us</h1></div>
+   <form method="post" action="contact">
+         {% csrf_token %}
+
+  <label for="name">First name:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+  <label for="email">email:</label><br>
+  <input type="text" id="email" name="email" value=""><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+  {% endblock body %}
